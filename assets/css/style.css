@@ -27,7 +27,7 @@ body {
     text-decoration: underline;
     text-underline-offset: 6px;
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 
 /* ---------- Main Div, the frame which will contain the game */
@@ -37,6 +37,7 @@ body {
     width: 86vw;
     margin: auto;
     margin-top: 0px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -44,4 +45,8 @@ body {
     perspective: 1000px;
     box-shadow: 6px 6px black;
     align-content: center;
+}
+
+#instructions {
+    font-size: 10px;
 }
