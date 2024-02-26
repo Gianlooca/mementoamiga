@@ -29,3 +29,19 @@ body {
     margin-top: 2%;
     margin-bottom: 10%;
 }
+
+/* ---------- Main Div, the frame which will contain the game */
+
+#main-div {
+    height: 76vh;
+    width: 86vw;
+    margin: auto;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 4px solid white;
+    perspective: 1000px;
+    box-shadow: 6px 6px black;
+    align-content: center;
+}
