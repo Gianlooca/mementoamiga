@@ -47,6 +47,13 @@ body {
     align-content: center;
 }
 
+#magic-div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
 #instructions {
     font-size: 10px;
 }
