@@ -54,6 +54,23 @@ body {
     align-items: center;
 }
 
+button {
+    font-family: 'Amiga Topaz', sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    display: flex;
+    margin: 17px;
+    background-color: white;
+    box-shadow: 2px 2px black;
+}
+
+
+/*The transform property set on this value makes the button
+"move" if you click on it*/
+button:active {
+    transform: translateY(2px);
+}
+
 #instructions {
     font-size: 10px;
 }
