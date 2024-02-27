@@ -35,6 +35,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     border: 2px solid white;
+    perspective: 1000px;
 }
 
 #magic-div {
@@ -71,6 +72,8 @@ transform .2s, otherwise we wouldn't see any flip.*/
     margin: 2px;
     position: relative;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .3s;
 }
 
 .memory-card:active {
@@ -93,6 +96,11 @@ to rotate it on the X axis 180 degrees.*/
     height: 105%;
     position: absolute;
     padding: 2px;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateX(180deg);
 }
 
 #instructions {
