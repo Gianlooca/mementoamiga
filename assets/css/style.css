@@ -98,6 +98,10 @@ transform .2s, otherwise we wouldn't see any flip.*/
     transition: transform .2s;
 }
 
+img {
+    width: 100px;
+}
+
 #instructions {
     font-size: 10px;
 }
