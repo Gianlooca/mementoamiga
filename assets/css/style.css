@@ -71,14 +71,6 @@ button:active {
     transform: translateY(2px);
 }
 
-#real-game {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 3px;
-}
-
 /*The transform-style property "inserts" our memory card element inside the 3d space which is created in the 
 #real-game container with the perspective property.
 We also add a property called transition and a value of
