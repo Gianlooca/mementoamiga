@@ -71,6 +71,33 @@ button:active {
     transform: translateY(2px);
 }
 
+#real-game {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+/*The transform-style property "inserts" our memory card element inside the 3d space which is created in the 
+#real-game container with the perspective property.
+We also add a property called transition and a value of
+transform .2s, otherwise we wouldn't see any flip.*/
+.memory-card {
+    width: 29%;
+    height: 40.333%;
+    position: relative;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
 #instructions {
     font-size: 10px;
 }
