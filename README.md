@@ -3,7 +3,7 @@
 (Developer: Gianluca Zimmatore)
 
 ## Introduction ##
-**Memento Amiga** is an online classic memory card game Amiga 500 themed. The cards (both backfaces and frontfaces), as well as the general look, are inspired by the famous Amiga 500 console.
+**Memento Amiga** is an online classic memory card game Amiga 500 themed. The cards (both backfaces and frontfaces), as well as the general look, are inspired by the famous Amiga 500 console. In particular, frontaces are real Amiga 500 videogame covers.
 
 ![Mockup image]()
 
