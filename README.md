@@ -77,6 +77,6 @@ The colours used have been taken directly from several images of the actual Amig
 I used [Colormind](http://colormind.io/) to represent the main colours used. A part from the general ones, used in the body, in the fonts and in the main div, I included even those of the unflipped cards (where the "Amiga logo" is; the white is not the same white used in elsewhere in the page, and we have a different shade of blue and a grey as well).<br>
 
 ![Colours used](docs/main-colors1.png)
-(docs/main-colors2.png)
+![Colours used](docs/main-colors2.png)
 <br>
 *Colours used with their hexadecimal values. They come in two different images because the [Colormind website](http://colormind.io/) only allows 5 colours in a row.*
