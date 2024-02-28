@@ -25,6 +25,7 @@ h1 {
     font-size: 13vw;
     color: white;
     text-shadow: 2px 3px black;
+    text-decoration-line: underline;
 }
 
 /* ---------- Main Div, the frame which will contain the game */
