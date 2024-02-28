@@ -99,3 +99,25 @@ The website is very easy to navigate, essential, cut to the bone.
 It consists of a single page where, inside a main div, all the "action" and possibilities (the actual game and the other game related [Features](#features)) are developed.
 We could describe the page from top to bottom as it follows: we have a main heading with the title of the game, again a main div, and out of it a click counter and a 60 seconds timer. A minimal footer with social media links and a copyright is also present.
 
+### Wireframes
+I used [Balsamiq](https://balsamiq.com/) to sketch the wireframes of the website.
+
+Below, a showcase of the whole amount of screens for the mobile version, and a sample for the tablet and desktop versions.
+
+#### Smarphone Version
+<details><summary>Homepage</summary>
+<img src="docs/wireframes/home-mobile.png">
+</details>
+<details><summary>How to play</summary>
+<img src="docs/wireframes/how-to-play-mobile.png">
+</details>
+<details><summary>Unflipped cards screen</summary>
+<img src="docs/wireframes/unflipped-mobile.png">
+</details>
+<details><summary>You win screen</summary>
+<img src="docs/wireframes/you-win-mobile.png">
+</details>
+<details><summary>You lose screen</summary>
+<img src="docs/wireframes/you-lose-mobile.png">
+</details>
+
