@@ -144,3 +144,28 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <br>
 <br>
 <br>
+
+## Technologies Used
+
+### Languages
+- HTML
+- CSS
+- JavaScript
+
+### Frameworks & Tools
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Gitpod](https://gitpod.io/)
+- [Tinypng](https://tinypng.com/)
+- [Free Convert](https://www.freeconvert.com/)
+- [Clideo](https://clideo.com/)
+- [Balsamiq](https://balsamiq.com/)
+- [Colormind](http://colormind.io/)
+- [Font Awsome](https://fontawesome.com/)
+- [Am I Responsive?](https://ui.dev/amiresponsive)
+- [Favicon](https://favicon.io/)
+- [Snipping Tool](https://apps.microsoft.com/detail/9MZ95KL8MR0L?hl=en-US&gl=US)
+- [Google](https://www.google.com/)
+<br>
+<br>
+<br>
