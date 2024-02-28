@@ -32,11 +32,12 @@ h1 {
 .main-div {
     margin: auto;
     margin-top: 12px;
-    height: 75vh;
-    width: 80vw;
+    height: 73vh;
+    width: 77vw;
     display: flex;
     flex-wrap: wrap;
     border: 2px solid white;
+    box-shadow: 6px 6px black;
     perspective: 1000px;
 }
 
