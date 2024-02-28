@@ -32,8 +32,8 @@ h1 {
 .main-div {
     margin: auto;
     margin-top: 12px;
-    height: 80vh;
-    width: 86vw;
+    height: 75vh;
+    width: 80vw;
     display: flex;
     flex-wrap: wrap;
     border: 2px solid white;
