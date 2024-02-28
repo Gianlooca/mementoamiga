@@ -17,6 +17,16 @@
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
     2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
+    3. [User Stories](#user-stories)
+        1. [Users](#users)
+        3. [Site Owner](#site-owner)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
 
 ## Project Goals 
 
@@ -50,7 +60,7 @@
 
 ### User Stories
 
-#### User 
+#### Users 
 1. As a user, I want to know quickly what the website is about.
 2. As a user, I want to easily understand how to navigate the website.
 3. As a user, I want to easily understand how to play.
@@ -81,5 +91,3 @@ I used [Colormind](http://colormind.io/) to represent the main colours used. A p
 <br>
 *Colours used with their hexadecimal values. They come in two different images because the [Colormind website](http://colormind.io/) only allows 5 colours in a row.*
 
-### Fonts
-I chose **Amiga Topaz** font for the whole website, because it's the actual Amiga 500 font (recreated by Patrick H. Lauke, as mentioned in more detail below in the [Credits](#credits) section). The direct source can be found [here](https://fontstruct.com/fontstructions/show/675155).
