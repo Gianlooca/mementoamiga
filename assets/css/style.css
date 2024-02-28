@@ -108,7 +108,8 @@ to rotate it on the X axis 180 degrees.*/
 /* --------- Footer */
 footer {
     background-color: white;
-    height: 95px;
+    border-top: 2px solid black;
+    height: 50px;
     width: 100%;
     text-align: center;
 }
@@ -116,13 +117,20 @@ footer {
 #copyright {
     text-align: center;
     font-size: small;
+    padding-top: 5px;
 }
 
 #social-media {
     display: flex;
     text-align: center;
-    justify-content: space-around;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    font-size: 3em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 1.2em;
+    list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer ul li a {
+    color: black;
 }
