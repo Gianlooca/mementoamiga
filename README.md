@@ -121,3 +121,21 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <img src="docs/wireframes/you-lose-mobile.png">
 </details>
 
+#### Tablet Version
+<details><summary>Homepage</summary>
+<img src="docs/wireframes/home-tablet.png">
+</details>
+<details><summary>Records</summary>
+<img src="docs/wireframes/unflipped-tablet.png">
+</details>
+
+#### Desktop Version
+<details><summary>Homepage</summary>
+<img src="docs/wireframes/home-desktop.png">
+</details>
+<details><summary>Records</summary>
+<img src="docs/wireframes/unflipped-desktop.png">
+</details>
+<br>
+<br>
+<br>
