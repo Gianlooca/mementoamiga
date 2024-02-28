@@ -103,10 +103,10 @@ to rotate it on the X axis 180 degrees.*/
     transform: rotateX(180deg);
 }
 
-#instructions {
-    font-size: 10px;
-}
-
-#timer-p {
-    margin-top: 4px;
+/* --------- Footer */
+footer {
+    background-color: white;
+    height: 95px;
+    width: 100%;
+    text-align: center;
 }
