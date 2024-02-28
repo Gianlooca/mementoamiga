@@ -27,6 +27,11 @@
     1. [Design Choices](#design-choices)
     2. [Colour](#colours)
     3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+        1. [Smartphone Version](#smartphone-version)
+        2. [Tablet Version](#tablet-version)
+        3. [Desktop Version](#desktop-version)
 
 ## Project Goals 
 
@@ -125,7 +130,7 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <details><summary>Homepage</summary>
 <img src="docs/wireframes/home-tablet.png">
 </details>
-<details><summary>Records</summary>
+<details><summary>Unflipped cards screen</summary>
 <img src="docs/wireframes/unflipped-tablet.png">
 </details>
 
@@ -133,7 +138,7 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <details><summary>Homepage</summary>
 <img src="docs/wireframes/home-desktop.png">
 </details>
-<details><summary>Records</summary>
+<details><summary>Unflipped cards screen</summary>
 <img src="docs/wireframes/unflipped-desktop.png">
 </details>
 <br>
