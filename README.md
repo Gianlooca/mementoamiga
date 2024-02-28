@@ -80,3 +80,6 @@ I used [Colormind](http://colormind.io/) to represent the main colours used. A p
 ![Colours used](docs/main-colors2.png)
 <br>
 *Colours used with their hexadecimal values. They come in two different images because the [Colormind website](http://colormind.io/) only allows 5 colours in a row.*
+
+### Fonts
+I chose **Amiga Topaz** font for the whole website, because it's the actual Amiga 500 font (recreated by Patrick H. Lauke, as mentioned in more detail below in the [Credits](#credits) section). The direct source can be found [here](https://fontstruct.com/fontstructions/show/675155).
