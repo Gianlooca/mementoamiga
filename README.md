@@ -104,7 +104,7 @@ I used [Balsamiq](https://balsamiq.com/) to sketch the wireframes of the website
 
 Below, a showcase of the whole amount of screens for the mobile version, and a sample for the tablet and desktop versions.
 
-#### Smarphone Version
+#### Smartphone Version
 <details><summary>Homepage</summary>
 <img src="docs/wireframes/home-mobile.png">
 </details>
