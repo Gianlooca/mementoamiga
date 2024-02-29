@@ -189,33 +189,6 @@ to rotate it on the Y axis 180 degrees.*/
     transform: rotateY(0) rotateZ(0);
 }
 
-.memory-card:active {
-    transform: scale(.95);
-    transition: transform .3s;
-}
-
-/*We have to create this style class
-and there's no space between the two classes
-because both belongs to the same element.
-When the .flip class is present we want
-to rotate it on the Y axis 180 degrees.*/
-.memory-card.flip {
-    transform: rotateX(180deg);
-}
-
-.front-face,
-.back-face {
-    width: 105%;
-    height: 105%;
-    position: absolute;
-    padding: 2px;
-    backface-visibility: hidden;
-}
-
-.front-face {
-    transform: rotateX(180deg);
-}
-
 /* Class created to dynamically set the display property to "none" */
 .hide {
     display: none;
