@@ -27,14 +27,9 @@ const state = {
   loop: null,
 };
 
-/**
- * 
- * @param {*} array 
- * @param {*} items 
- * @returns 
- */
-const random = function (array, items) {
+const random = (array, items) => {
   // Crea una copia dell'array originale
+  // in modo da non modificarlo
   var clone = [...array];
 
   // Array per contenere gli elementi scelti
@@ -42,14 +37,25 @@ const random = function (array, items) {
 
   // Itera per il numero di elementi da scegliere
   for (let index = 0; index < items; index++) {
+      // Controlla se la copia dell'array è vuota
+      // per terminare il ciclo
+      if (clone.length === 0) {
+          break;
+      }
+
+      // Sceglie un indice casuale
+      // tra 0 e la lunghezza dell'array copia
       var randomIndex = Math.floor(Math.random() * clone.length);
 
+      // Inserisce l'elemento scelto nell'array risultato
       randomValue.push(clone[randomIndex]);
 
+      // Rimuove l'elemento selezionato
+      // dalla copia dell'array
       clone.splice(randomIndex, 1);
   }
 
-  const filteredArray = randomValue.filter((value) => value !== undefined);
-
-  return filteredArray;
+  // Restituisce l'array con gli elementi scelti
+  return randomValue;
 };
+
