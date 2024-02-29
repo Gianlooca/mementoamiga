@@ -28,7 +28,7 @@
     2. [Colour](#colours)
     3. [Fonts](#fonts)
     4. [Structure](#structure)
-    5. [Wireframes](#wireframes)
+    5. [Wireframes and Game Logic General Idea](#wireframes-and-game-logic-general-idea)
         1. [Smartphone Version](#smartphone-version)
         2. [Tablet Version](#tablet-version)
         3. [Desktop Version](#desktop-version)
@@ -142,7 +142,16 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <img src="docs/wireframes/unflipped-desktop.png">
 </details>
 
-Since interactivity (hence the use of JavaScript) was involved, I also have created a pen-and-paper blueprint, something between a list and a diagram to underline the "logic blocks" the game should have been realized from. 
+Since interactivity (hence the use of JavaScript) is involved, I also have created a pen-and-paper blueprint, something between a list and a diagram to underline the "logic blocks" the game should have been realized from. Talking in general, we need to manage (and possibly create functions for) several issues:
+- create dinamically the card blocks through JavaScript (and manipulate the DOM);
+- have random and shuffle functions for the creation of cards;
+- running and starting the game from a precise click event;
+- make a "growing" timer start when the user begins a new game;
+- calculate the number of clicks/taps (or attempts, in order to see how many of them were needed for the player to win);
+- have a "flip cards" function (that also allow a maximum of two flips for each attempt);
+- have a "match function";
+- have a win message;
+- in general, have a good event listeners management.
 
 <br>
 <br>
