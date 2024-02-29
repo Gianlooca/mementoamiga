@@ -101,6 +101,24 @@ button:active {
     align-items: center;
 }
 
+/* Styles for the victory message */
+.win {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex: 1 0 auto;
+    margin: 10px 40px;
+    color: black;
+}
+
 /*The transform-style property "inserts" our memory card element inside the 3d space which is created in the 
 #real-game container with the perspective property.
 We also add a property called transition and a value of
