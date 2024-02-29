@@ -13,3 +13,16 @@ const selectors = {
   win: document.querySelector(".win"),
   controls: document.querySelector(".controls"),
 };
+
+/**
+ * This other object has been created in order to store
+ * (and change by updating the values of the properties)
+ * the "state" of fundamental snippets of our game
+ */
+const state = {
+  gameStarted: false,
+  flippedCards: 0,
+  totalFlips: 0,
+  totalTime: 0,
+  loop: null,
+};
