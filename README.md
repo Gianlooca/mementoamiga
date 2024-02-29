@@ -181,3 +181,16 @@ Since interactivity (hence the use of JavaScript) is involved, I also have creat
 <br>
 <br>
 <br>
+
+## Features
+As already said, the page is "skinny": it consists of a single page and 7 features.
+
+### Logo
+- It shows the page title in the peculiar Amiga 500 font (recreated by Patrick H. Lauke). It's responsive but always the same, basically, in all the versions, so we're going to show just a sample from the smartphone version
+
+**Smartphone Version**
+
+![Logo](docs/features/heading-smartphone.webp)
+
+<br>
+<br>
