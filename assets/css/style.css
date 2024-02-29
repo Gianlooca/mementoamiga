@@ -114,6 +114,7 @@ button:active {
     color: white;
 }
 
+/* Styles for the instructions */
 .text-how {
     display: flex;
     justify-content: center;
@@ -123,6 +124,7 @@ button:active {
     /*min-height: 400px;*/
 }
 
+/* Styles for the click counter and the timer */
 .stats {
     display: flex;
     justify-content: space-between;
