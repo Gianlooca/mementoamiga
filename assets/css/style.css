@@ -114,6 +114,15 @@ button:active {
     color: white;
 }
 
+.text-how {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    /*min-height: 400px;*/
+}
+
 .stats {
     display: flex;
     justify-content: space-between;
