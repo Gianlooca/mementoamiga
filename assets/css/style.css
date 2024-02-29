@@ -1,13 +1,13 @@
 /* General style */
 
 @font-face {
-    font-family: 'Amiga Topaz';
-    src: url('assets/fonts/AmigaTopaz.eot');
-    src: url('assets/fonts/AmigaTopaz.eot?#iefix') format('embedded-opentype'),
-        url('assets/fonts/AmigaTopaz.woff2') format('woff2'),
-        url('assets/fonts/AmigaTopaz.woff') format('woff'),
-        url('assets/fonts/AmigaTopaz.ttf') format('truetype'),
-        url('assets/fonts/AmigaTopaz.svg#AmigaTopaz') format('svg');
+    font-family: 'AmigaTopaz';
+    src: url('fonts/AmigaTopaz.eot');
+    src: url('fonts/AmigaTopaz.eot?#iefix') format('embedded-opentype'),
+        url('fonts/AmigaTopaz.woff2') format('woff2'),
+        url('fonts/AmigaTopaz.woff') format('woff'),
+        url('fonts/AmigaTopaz.ttf') format('truetype'),
+        url('fonts/AmigaTopaz.svg#AmigaTopaz') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -17,7 +17,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Amiga Topaz', sans-serif;
+    font-family: 'AmigaTopaz', sans-serif;
 }
 
 body {
@@ -64,7 +64,7 @@ h1 {
 }
 
 button {
-    font-family: 'Amiga Topaz', sans-serif;
+    font-family: 'AmigaTopaz', sans-serif;
     font-size: 20px;
     padding: 3px;
     display: flex;
