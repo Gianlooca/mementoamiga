@@ -110,6 +110,9 @@ to rotate it on the X axis 180 degrees.*/
 
 /* --------- Footer */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     background-color: white;
     border-top: 2px solid black;
     height: 50px;
