@@ -32,22 +32,17 @@ h1 {
 
 .main-div {
     margin: auto;
-    margin-top: 12px;
-    height: 73vh;
-    width: 77vw;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     border: 2px solid white;
     box-shadow: 6px 6px black;
-    perspective: 1000px;
 }
 
-#magic-div {
+/*#magic-div {
     display: none;
     position: relative;
     flex-direction: column;
     align-items: center;
-}
+}*/
 
 button {
     font-family: 'Amiga Topaz', sans-serif;
