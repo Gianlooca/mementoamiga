@@ -44,6 +44,12 @@ h1 {
     align-items: center;
 }*/
 
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 button {
     font-family: 'Amiga Topaz', sans-serif;
     font-size: 20px;
