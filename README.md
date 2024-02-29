@@ -38,6 +38,7 @@
 5. [Features](#features)
     1. [Logo](#logo)
     2. [Central Div](#central-div)
+8. [Deployment](#deployment)
 
 ## Project Goals 
 
@@ -195,5 +196,32 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 
 ![Logo](docs/features/heading-smartphone.webp)
 
+<br>
+<br>
+
+## Deployment
+The website was deployed using GitHub Pages by following these steps:
+1. I went to the Settings tab of my GitHub repository (created before);
+2. on the left-hand sidebar, in the Code and automation section, I selected Pages;
+3. made sure that "Source" was set to 'Deploy from Branch', that "Main" branch is selected and that "Folder" is set to / (root);
+4. under "Branch", click "Save";
+5. then I went back to the Code tab, waited a few minutes for the build to finish and refresh my repository;
+6. on the right-hand side, in the "Environments" section, it has been possible to click on 'github-pages';
+7. inside a frame titled "Active deployments" I saw the link of my deployed website.
+
+You can for fork the repository by following these steps:
+1. Go to the GitHub repository;
+2. Click on Fork button in upper right hand corner.
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository;
+2. Locate the Code button above the list of files and click it;
+3. Select if you prefere to clone using HTTPS, SSH, or Github CLI and click the copy icon to copy the URL to your clipboard;
+4. Open Git Bash;
+5. Change the current working directory to the one where you want the cloned directory;
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY);
+7. Press Enter to create your local clone.
+
+<br>
 <br>
 <br>
