@@ -38,6 +38,8 @@
 5. [Features](#features)
     1. [Logo](#logo)
     2. [Central Div](#central-div)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
 8. [Deployment](#deployment)
 
 ## Project Goals 
@@ -198,6 +200,14 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 
 <br>
 <br>
+
+## Validation
+
+### HTML Validation
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. The page has been validated (both by URI and text input) with no errors and no warnings to show.<br>
+*Afterwards, we'll show just the link of URI validations.*
+
+[Homepage](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgianlooca.github.io%2Fmementoamiga%2F)
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
