@@ -32,6 +32,12 @@
         1. [Smartphone Version](#smartphone-version)
         2. [Tablet Version](#tablet-version)
         3. [Desktop Version](#desktop-version)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+    1. [Logo](#logo)
+    2. [Central Div](#central-div)
 
 ## Project Goals 
 
