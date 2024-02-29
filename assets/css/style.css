@@ -146,6 +146,12 @@ transform .3s, otherwise we wouldn't see any flip.*/
     backface-visibility: hidden;
 }
 
+.card-front > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .memory-card:active {
     transform: scale(.95);
     transition: transform .3s;
