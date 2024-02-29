@@ -49,6 +49,8 @@ h1 {
     width: 100%;
     border: 2px solid white;
     box-shadow: 6px 6px black;
+    min-height: 300px;
+    margin: 10px 40px;
 }
 
 .controls {
@@ -117,6 +119,11 @@ to rotate it on the X axis 180 degrees.*/
 
 .front-face {
     transform: rotateX(180deg);
+}
+
+/* Class created to dynamically set the display property to "none" */
+.hide {
+    display: none;
 }
 
 /* --------- Footer */
