@@ -135,15 +135,15 @@ button:active {
 /*The transform-style property "inserts" our memory card element inside the 3d space which is created in the 
 #real-game container with the perspective property.
 We also add a property called transition and a value of
-transform .2s, otherwise we wouldn't see any flip.*/
-.memory-card {
-    width: calc(33% - 4px);
-    height: calc(24.333% - 4px);
-    margin: 2px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .3s;
+transform .3s, otherwise we wouldn't see any flip.*/
+.card-front {
+    position: absolute;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    background: #282A3A;
+    transition: transform .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
 }
 
 .memory-card:active {
