@@ -128,9 +128,6 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <details><summary>You win screen</summary>
 <img src="docs/wireframes/you-win-mobile.png">
 </details>
-<details><summary>You lose screen</summary>
-<img src="docs/wireframes/you-lose-mobile.png">
-</details>
 
 #### Tablet Version
 <details><summary>Homepage</summary>
