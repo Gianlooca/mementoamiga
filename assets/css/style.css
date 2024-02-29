@@ -154,6 +154,15 @@ transform .3s, otherwise we wouldn't see any flip.*/
     height: 100%;
 }
 
+/*We have to create this style class
+and there's no space between the two classes
+because both belongs to the same element.
+When the .flip class is present we want
+to rotate it on the Y axis 180 degrees.*/
+.card.flipped .card-front {
+    transform: rotateY(180deg) rotateZ(50deg);
+}
+
 .memory-card:active {
     transform: scale(.95);
     transition: transform .3s;
@@ -163,7 +172,7 @@ transform .3s, otherwise we wouldn't see any flip.*/
 and there's no space between the two classes
 because both belongs to the same element.
 When the .flip class is present we want
-to rotate it on the X axis 180 degrees.*/
+to rotate it on the Y axis 180 degrees.*/
 .memory-card.flip {
     transform: rotateX(180deg);
 }
