@@ -23,7 +23,9 @@
 
 <body>
     <!-- Main heading -->
-    <h1 class="heading">Memento Amiga</h1>
+    <div>
+        <h1 class="heading">Memento Amiga</h1>
+    </div>
     <!-- Main container -->
     <div class="main-div">
         <div class="controls">
@@ -35,7 +37,17 @@
             <div class="wrapper-board hide">
                 <div class="board" data-dimension="3"></div>
             </div>
-            <div class="win"></div>
+            <!-- Win message div -->
+            <div class="win hide"></div>
+            <!-- Instructions div with "back" button to return to ".controls" div -->
+            <div class="how hide">
+                <span class="text-how">
+                    Dear amiga-sick friends,<br>
+                    we all know the rules of this game. Just try to match the 4 couples of identical cards. But TEMPUS
+                    FUGIT...
+                    <button id="back" type="back">Back</button>
+                </span>
+            </div>
         </div>
     </div>
     <div class="stats">
