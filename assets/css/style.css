@@ -88,6 +88,19 @@ button:active {
     transform: translateY(2px);
 }
 
+/* Styles for the actual board game */
+.board {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    width: 100%;
+    transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+    backface-visibility: hidden;
+    justify-items: center;
+    align-items: center;
+}
+
 /*The transform-style property "inserts" our memory card element inside the 3d space which is created in the 
 #real-game container with the perspective property.
 We also add a property called transition and a value of
