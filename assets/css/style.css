@@ -110,6 +110,10 @@ button:active {
     min-height: 400px;
 }
 
+.win-text {
+    color: white;
+}
+
 .stats {
     display: flex;
     justify-content: space-between;
