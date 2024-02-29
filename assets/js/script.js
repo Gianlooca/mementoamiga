@@ -26,3 +26,30 @@ const state = {
   totalTime: 0,
   loop: null,
 };
+
+/**
+ * 
+ * @param {*} array 
+ * @param {*} items 
+ * @returns 
+ */
+const random = function (array, items) {
+  // Crea una copia dell'array originale
+  var clone = [...array];
+
+  // Array per contenere gli elementi scelti
+  var randomValue = [];
+
+  // Itera per il numero di elementi da scegliere
+  for (let index = 0; index < items; index++) {
+      var randomIndex = Math.floor(Math.random() * clone.length);
+
+      randomValue.push(clone[randomIndex]);
+
+      clone.splice(randomIndex, 1);
+  }
+
+  const filteredArray = randomValue.filter((value) => value !== undefined);
+
+  return filteredArray;
+};
