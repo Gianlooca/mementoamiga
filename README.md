@@ -141,6 +141,9 @@ Below, a showcase of the whole amount of screens for the mobile version, and a s
 <details><summary>Unflipped cards screen</summary>
 <img src="docs/wireframes/unflipped-desktop.png">
 </details>
+
+Since interactivity (hence the use of JavaScript) was involved, I also have created a pen-and-paper blueprint, something between a list and a diagram to underline the "logic blocks" the game should have been realized from. 
+
 <br>
 <br>
 <br>
