@@ -184,6 +184,72 @@ const startGame = () => {
   }, 1000);
 };
 
+// Gestisce il giro delle carte
+const flipCard = (card) => {
+  // Incrementa il contatore di carte girate
+  state.flippedCards++;
+
+  // Incrementa il contatore di mosse totali
+  state.totalFlips++;
+
+  // Se il gioco non è iniziato, avvialo
+  if (!state.gameStarted) {
+      startGame();
+  }
+
+  // Se sono state girate max 2 carte, aggiungi flipped
+  if (state.flippedCards <= 2) {
+      card.classList.add("flipped");
+  }
+
+  // Quando ne sono state girate 2
+  if (state.flippedCards === 2) {
+      // Trova le 2 carte girate
+      const flippedCards = document.querySelectorAll(
+          ".flipped:not(.matched)"
+      );
+
+      // Se sono uguali aggiungi matched
+      if (
+          flippedCards[0].getAttribute("data-name") ===
+          flippedCards[1].getAttribute("data-name")
+      ) {
+          flippedCards[0].classList.add("matched");
+          flippedCards[1].classList.add("matched");
+      }
+
+      // Dopo 1 sec, gira di nuovo le carte
+      setTimeout(() => {
+          flipBackCards();
+      }, 1000);
+  }
+
+  // Se non ci sono più carte da girare, hai vinto
+  if (!document.querySelectorAll(".card:not(.flipped)").length) {
+      setTimeout(() => {
+          selectors.controls.classList.add("hide");
+          selectors.wrapperBoard.classList.add("hide");
+          selectors.stats.classList.add("hide");
+          selectors.win.classList.remove("hide");
+
+          // Mostra il messaggio di vittoria
+          selectors.win.innerHTML = `
+              <span class="win-text">
+                  You won <br />
+                  with <span class="highlight">${state.totalFlips}</span> moves<br />
+                  under <span class="highlight">${state.totalTime}</span> seconds.
+              </span>
+              <div>
+                  <button id="restart" class="play-again">Play Again</button>
+              </div>
+          `;
+
+          // Ferma il timer
+          clearInterval(state.loop);
+      }, 1000);
+  }
+};
+
 // Gestisce il click sulle carte
 const handleCardClick = (event) => {
   // Ottiene il div.card cliccato
