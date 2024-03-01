@@ -53,7 +53,7 @@ h1 {
     text-decoration-line: underline;
 }
 
-/* ---------- Main Div, the frame which will contain the game */
+/* ---------- Main Div, the frame which will contain the game and messages */
 
 .main-div {
     border: 2px solid white;
@@ -239,6 +239,7 @@ footer ul li a {
     color: black;
 }
 
+/* ----- Media queries for tablets -------*/
 @media screen and (min-width: 768px) {
 
     h1 {
@@ -277,6 +278,7 @@ footer ul li a {
     }
 }
 
+/* -------- Media queries for bigger screens --------- */
 @media screen and (min-width: 1024px) {
 
     h1 {
