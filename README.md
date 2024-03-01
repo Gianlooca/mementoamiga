@@ -45,6 +45,8 @@
     3. [Footer](#footer)
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
 8. [Deployment](#deployment)
 
 ## Project Goals 
