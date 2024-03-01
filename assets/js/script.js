@@ -186,6 +186,38 @@ const handleCardClick = (event) => {
   }
 };
 
+const handleRestartClick = (event) => {
+  // Ottiene tutti i nodi <div> figli di wrapperBoard
+  const divs = selectors.wrapperBoard.querySelectorAll("div");
+
+  // Rimuove tutti i nodi tranne il primo
+  divs.forEach((div, index) => {
+      if (index !== 0) {
+          div.remove();
+      }
+  });
+
+  // Mostra i controlli
+  selectors.controls.classList.remove("hide");
+
+  // Mostra le statistiche
+  selectors.stats.classList.remove("hide");
+
+  // Nasconde il messaggio di vittoria
+  selectors.win.classList.add("hide");
+
+  // Resetta i contatori
+  state.totalFlips = 0;
+  state.totalTime = 0;
+
+  // Aggiorna l'interfaccia
+  selectors.moves.innerText = `${state.totalFlips} Moves`;
+  selectors.timer.innerText = `Time: ${state.totalTime} Sec`;
+
+  // Rigenera il tabellone
+  run();
+};
+
 // Gestisce il click sul pulsante start
 const handleStartClick = (event) => {
   // Ottiene il target dell'evento (l'elemento cliccato)
