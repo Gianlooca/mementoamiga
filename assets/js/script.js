@@ -231,7 +231,8 @@ const flipCard = (card) => {
       setTimeout(() => {
           selectors.controls.classList.add("hide");
           selectors.wrapperBoard.classList.add("hide");
-          selectors.stats.classList.add("hide");
+          //selectors.stats.classList.add("hide");
+          selectors.stats.classList.add("invisible");
           selectors.win.classList.remove("hide");
 
           // Mostra il messaggio di vittoria

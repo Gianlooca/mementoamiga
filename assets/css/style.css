@@ -202,6 +202,10 @@ to rotate it on the Y axis 180 degrees.*/
     display: none;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 /* --------- Footer */
 footer {
     position: fixed;
