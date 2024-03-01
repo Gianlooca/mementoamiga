@@ -120,7 +120,8 @@ button:active {
     align-items: center;
     flex-direction: column;
     color: white;
-    /*min-height: 400px;*/
+    text-align: center;
+    padding: 10px;
 }
 
 /* Styles for the click counter and the timer */
