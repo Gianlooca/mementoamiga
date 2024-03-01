@@ -228,6 +228,16 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 
 ![Actual Game Board With 3 Flipped Cards](docs/features/game-board-with-flipped-cards-smartphone.png)
 
+#### Click Counter and Timer
+- In the previous screenshots it is possible to see (below the game board) a counter, to see in how many moves the player will win (to lose is not allowded in this game: you need to relax!) and a timer (again, not as a countdown... the players will take their time). These two features will start to work only when the user pushes "Start new game" and their result will be showed in the "win message" (hence, at the end of the game, their position will change: from below the Game Board to the inner part of it).
+
+#### Win Message
+- When the player will win, a win message will be displayed inside the Game Board, with the amount of moves and the time the player spent to win. A classic retro videogame sound will also "appear" (taken from the second level of the first "Rick Dangerous", to be precise) and the player will have the possibility to play a new game, by going back to the "Start New Game and How To Play" screen.
+
+**Tablet Version**
+
+![Win Message](docs/features/win-message-with-stats-tablet.png)
+
 ## Validation
 
 ### HTML Validation
