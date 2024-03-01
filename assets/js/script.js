@@ -75,3 +75,43 @@ const handleBackClick = () => {
   selectors.controls.classList.remove("hide");
   selectors.how.classList.add("hide");
 };
+
+// Registra gli event listener
+const eventListener = () => {
+  // Al click su un elemento
+  document.addEventListener("click", (event) => {
+      // Se l'ID è start
+      if (event.target.id === "start") {
+          // Gestisci click start
+          handleStartClick(event);
+          // Inizia gioco
+          handleStartGameClick();
+          return;
+      }
+
+      // Se l'ID è restart
+      if (event.target.id === "restart") {
+          // Gestisci click restart
+          handleRestartClick(event);
+          return;
+      }
+
+      if (event.target.id === "info") {
+          handleShowHowClick();
+          return;
+      }
+
+      if (event.target.id === "back") {
+          handleBackClick();
+          return;
+      }
+
+      // Altrimenti gestisci click carta
+      handleCardClick(event);
+  });
+};
+
+document.addEventListener("DOMContentLoaded", function () {
+  run();
+  eventListener();
+});
