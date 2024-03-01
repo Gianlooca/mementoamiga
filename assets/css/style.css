@@ -154,7 +154,7 @@ transform .3s, otherwise we wouldn't see any flip.*/
     backface-visibility: hidden;
 }
 
-.card-front > img {
+.card-front>img {
     display: block;
     width: 100%;
     height: 100%;
@@ -185,7 +185,7 @@ to rotate it on the Y axis 180 degrees.*/
     backface-visibility: hidden;
 }
 
-.card-back > img {
+.card-back>img {
     display: block;
     width: 100%;
     height: 100%;
@@ -249,7 +249,7 @@ footer ul li a {
 
     .card {
         height: 130px;
-    width: 130px;
+        width: 130px;
     }
 
     .stats {
@@ -292,6 +292,8 @@ footer ul li a {
 
     .stats {
         margin: 50px 300px;
+        position: relative;
+        bottom: 26px;
     }
-    
+
 }
