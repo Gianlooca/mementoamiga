@@ -1,3 +1,4 @@
+// Variable storing the audio effect
 const winSound = new Audio("assets/audio/memento-amiga-win.mp3");
 
 /**
@@ -32,17 +33,18 @@ const state = {
 };
 
 const random = (array, items) => {
-  // Crea una copia dell'array originale
-  // in modo da non modificarlo
+  /**
+   * This create a copy of the original array
+   * in order to not modify the original one
+   */
   var clone = [...array];
 
-  // Array per contenere gli elementi scelti
+  // Array to contain the chosen values
   var randomValue = [];
 
-  // Itera per il numero di elementi da scegliere
+  // Iterate for the number of the items to chose
   for (let index = 0; index < items; index++) {
-      // Controlla se la copia dell'array è vuota
-      // per terminare il ciclo
+      //This checks if the array copy is empty to end the loop
       if (clone.length === 0) {
           break;
       }
@@ -59,16 +61,16 @@ const random = (array, items) => {
       clone.splice(randomIndex, 1);
   }
 
-  // Restituisce l'array con gli elementi scelti
+  // Gives back the array with the chosen values
   return randomValue;
 };
 
-// Funzione per mescolare gli elementi di un array
+// Shuffle function
 const shuffle = (array) => {
-  // Clona l'array originale per non modificarlo
+  // This clones the original array in order to modify it
   var clonedArray = [...array];
 
-  // Cicla all'indietro sulla lunghezza dell'array
+  // Loops "back" on the .lenght property of the array
   for (let i = clonedArray.length - 1; i > 0; i--) {
       // Sceglie un indice casuale tra 0 e i
       const j = Math.floor(Math.random() * (i + 1));
@@ -77,20 +79,20 @@ const shuffle = (array) => {
       [clonedArray[i], clonedArray[j]] = [clonedArray[j], clonedArray[i]];
   }
 
-  // Restituisce l'array mescolato
+  // Gives us back the shuffled array
   return clonedArray;
 };
 
 const run = () => {
-  // Nasconde il contenitore del tabellone
+  // This hides the value of wrappedBoard
   if (!selectors.wrapperBoard.classList.contains("hide")) {
       selectors.wrapperBoard.classList.add("hide");
   }
 
-  // ottiene la dimensione del'attributo data-dimension
+  // with this we get the dimensions of the attributes "data-dimension"
   const dimensions = selectors.board.getAttribute("data-dimension");
 
-  // Array con la carta di default
+  // Array with the default backface Amiga Floppy card
   const cardDefault = [
       {
           name: "amiga",
@@ -98,7 +100,7 @@ const run = () => {
       },
   ];
 
-  // Array con le carte dei giochi
+  // Array with the frontfaces of the cards
   const cardArray = [
       {
           name: "lemmings",
@@ -126,13 +128,13 @@ const run = () => {
       },
   ];
 
-  // Sceglie un numero di carte casuali pari alle dimensioni
+  // This const chooses a number of random cards of the same dimensions
   const picks = random(cardArray, dimensions * dimensions);
 
-  // Mescola le carte scelte
+  // Shuffles the chosen cards
   const items = shuffle([...picks, ...picks]);
 
-  // Genera il markup HTML per le carte
+  // Generates the markup HTML for the cards
   const cards = `
       <div class="board">
       ${items
@@ -152,71 +154,69 @@ const run = () => {
       </div>
       `;
 
-  // Converte la stringa HTML in nodi DOM
+  // Converts HTML string to DOM nodes
   var parser = new DOMParser().parseFromString(cards, "text/html");
 
-  // Seleziona il nodo .board appena creato
+  // Selects the .board node just created
   const newBoard = parser.querySelector(".board");
 
-  // Svuota completamente il contenuto di .board
+  // Completely clear the .board content
   selectors.board.innerHTML = "";
 
-  // Sposta tutti i figli di newBoard dentro .board
+  // Move all the children of newBoard into .board
   while (newBoard.firstChild) {
       selectors.board.appendChild(newBoard.firstChild);
   }
 
-  // Imposta le colonne della griglia
+  // Set the grid columns
   selectors.board.style.gridTemplateColumns = `repeat(${dimensions}, auto)`;
 };
 
-// Fa partire il timer
+// Starts the timer
 const startGame = () => {
-  // Imposta lo stato del gioco come iniziato
+  // Sets the game status as "started" with a boolean value
   state.gameStarted = true;
 
-  //Shows the .stats when the game starts
+  // Shows the .stats when the game starts
   selectors.stats.classList.remove("invisible");
 
-  // Avvia un loop ogni secondo
+  // Fires a loop per second
   state.loop = setInterval(() => {
-      // Incrementa il tempo totale
       state.totalTime++;
 
-      // Aggiorna il testo del contatore di mosse
+      // Updates click counter
       selectors.moves.innerText = `${state.totalFlips} Moves`;
 
-      // Aggiorna il testo del timer
+      // Updates timer
       selectors.timer.innerText = `Time: ${state.totalTime} Sec`;
   }, 1000);
 };
 
-// Gestisce il giro delle carte
+// This manages the flipping cards logic
 const flipCard = (card) => {
-  // Incrementa il contatore di carte girate
+  // Increases the flipped card counter
   state.flippedCards++;
 
-  // Incrementa il contatore di mosse totali
+  // Increases total clicks in the click counter
   state.totalFlips++;
 
-  // Se il gioco non è iniziato, avvialo
+  // Here we say: if the game hasn't started, then start it
   if (!state.gameStarted) {
       startGame();
   }
 
-  // Se sono state girate max 2 carte, aggiungi flipped
+  // If a max of 2 cards have been flipped, add "flipped"
   if (state.flippedCards <= 2) {
       card.classList.add("flipped");
   }
 
-  // Quando ne sono state girate 2
+  // When 2 cards have been flipped, find them
   if (state.flippedCards === 2) {
-      // Trova le 2 carte girate
       const flippedCards = document.querySelectorAll(
           ".flipped:not(.matched)"
       );
 
-      // Se sono uguali aggiungi matched
+      // If they are the same cards, add .matched
       if (
           flippedCards[0].getAttribute("data-name") ===
           flippedCards[1].getAttribute("data-name")
@@ -225,13 +225,13 @@ const flipCard = (card) => {
           flippedCards[1].classList.add("matched");
       }
 
-      // Dopo 1 sec, gira di nuovo le carte
+      // After one second, turns back the cards again
       setTimeout(() => {
           flipBackCards();
       }, 1000);
   }
 
-  // Se non ci sono più carte da girare, hai vinto
+  // If there aren't card to flip anymore, you won
   if (!document.querySelectorAll(".card:not(.flipped)").length) {
       setTimeout(() => {
           selectors.controls.classList.add("hide");
@@ -240,7 +240,7 @@ const flipCard = (card) => {
           selectors.stats.classList.add("invisible");
           selectors.win.classList.remove("hide");
 
-          // Mostra il messaggio di vittoria
+          // Show the .win-text with the total moves and time
           selectors.win.innerHTML = `
               <span class="win-text">
                   You won <br />
@@ -255,129 +255,132 @@ const flipCard = (card) => {
           //Starts the winSound
           winSound.play();
 
-          // Ferma il timer
+          // Stops the timer
           clearInterval(state.loop);
       }, 1000);
   }
 };
 
-// Gestisce le carte da tornare senza match
+// This manages the cards without a match
 const flipBackCards = () => {
-  // Seleziona tutte le card non abbinate
+  // Select all unmatched cards
   document.querySelectorAll(".card:not(.matched)").forEach((card) => {
-      // Rimuovi la classe flipped per girarle di nuovo coperte
+      // Remove the .flipped class to turn the cards back again
       card.classList.remove("flipped");
   });
 
-  // Reimposta a 0 il contatore di carte girate
+  // Resets the flipped card counter to 0
   state.flippedCards = 0;
 };
 
-// Gestisce il click sulle carte
+// Handles the click on cards
 const handleCardClick = (event) => {
-  // Ottiene il div.card cliccato
+  // Gets the div.card clicked
   const target = event.target.nextSibling.parentElement;
 
-  // Ottiene il div.card-container padre
+  // Gets the div.card-container parent
   const parent = target.parentElement;
 
-  // Logica per flippare la carta
+  // Logic to flip the card
   if (
-      // Controlla che sia un div.card
+      // Check that it is a div.card AND AT THE SAME TIME that the container is not already flipped
       target.className.includes("card") &&
-      // e che il contenitore non sia già flippato
       !parent.className.includes("flipped")
   ) {
-      // Flippa la carta
+      // Flip the card
       flipCard(parent);
   }
 };
 
+// Handler to restart the click event on cards
 const handleRestartClick = (event) => {
-  // Ottiene tutti i nodi <div> figli di wrapperBoard
+  // Gets all child div nodes of wrapperBoard
   const divs = selectors.wrapperBoard.querySelectorAll("div");
 
-  // Rimuove tutti i nodi tranne il primo
+  // Removes all nodes except the first one
   divs.forEach((div, index) => {
       if (index !== 0) {
           div.remove();
       }
   });
 
-  // Mostra i controlli
+  // Hides the .controls
   selectors.controls.classList.remove("hide");
 
-  // Mostra le statistiche
+  // Shows the .stats
   selectors.stats.classList.remove("hide");
 
-  // Nasconde il messaggio di vittoria
+  // Hides the win-text
   selectors.win.classList.add("hide");
 
-  // Resetta i contatori
+  // Resets the counters of flips and the timer
   state.totalFlips = 0;
   state.totalTime = 0;
 
-  // Aggiorna l'interfaccia
+  // Update the interface
   selectors.moves.innerText = `${state.totalFlips} Moves`;
   selectors.timer.innerText = `Time: ${state.totalTime} Sec`;
 
-  // Rigenera il tabellone
+  // Call the run function 
   run();
 };
 
-// Gestisce il click sul pulsante start
+// Handles the click on start button
 const handleStartClick = (event) => {
-  // Ottiene il target dell'evento (l'elemento cliccato)
+  // Gets the event target (that is the clicked item)
   const target = event.target;
 
-  // Ottiene l'elemento padre del target
+  // Gets the parent element of the target
   const parent = target.parentElement;
 
-  // Nasconde i controlli
+  // Hide the .controls
   selectors.controls.classList.add("hide");
 
-  // Mostra il contenitore del tabellone
+  // Shows the wrapperBoard
   selectors.wrapperBoard.classList.remove("hide");
 };
 
-// gestisce game click
+// Handles the call of the startGame function
 const handleStartGameClick = () => {
   startGame();
 };
 
-// gestisce come funziona il gioco
+// Handles the instructions 
 const handleShowHowClick = () => {
   selectors.controls.classList.add("hide");
   selectors.how.classList.remove("hide");
 };
 
-// gestione back click
+// Handles the "back" button on the instructions page
 const handleBackClick = () => {
   selectors.controls.classList.remove("hide");
   selectors.how.classList.add("hide");
 };
 
-// Registra gli event listener
+// Store the event listeners
 const eventListener = () => {
-  // Al click su un elemento
+
+   // This says: When clicking on an element,
+   // if the target id is "start",
+   // handle click start, hence
+   // start the game
   document.addEventListener("click", (event) => {
-      // Se l'ID è start
       if (event.target.id === "start") {
-          // Gestisci click start
           handleStartClick(event);
-          // Inizia gioco
           handleStartGameClick();
           return;
       }
 
-      // Se l'ID è restart
+      // Then, if the id is "restart"
       if (event.target.id === "restart") {
-          // Gestisci click restart
+          // restart the game
           handleRestartClick(event);
           return;
       }
 
+      // if the id is "info"
       if (event.target.id === "info") {
+        // handle handleShowHowClick, etc.
           handleShowHowClick();
           return;
       }
@@ -387,11 +390,14 @@ const eventListener = () => {
           return;
       }
 
-      // Altrimenti gestisci click carta
       handleCardClick(event);
   });
 };
 
+/**
+ *  This makes sure that the "run" and "eventListener" functions
+ *  are called only after the HTML content of our page has been loaded.
+ */
 document.addEventListener("DOMContentLoaded", function () {
   run();
   eventListener();
