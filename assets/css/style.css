@@ -54,7 +54,7 @@ h1 {
 .main-div {
     display: flex;
     margin: auto;
-    width: 100%;
+    width: 90%;
     border: 2px solid white;
     box-shadow: 6px 6px black;
     min-height: 300px;
