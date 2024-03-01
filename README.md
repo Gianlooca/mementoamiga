@@ -47,6 +47,7 @@
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
     3. [Accessibility](#accessibility)
+    4. [Lighthouse Validation](#lighthouse-validation)
 8. [Deployment](#deployment)
 
 ## Project Goals 
@@ -280,6 +281,13 @@ The WAVE WebAIM web accessibility evaluation tool was used to ensure the website
 [Homepage](https://wave.webaim.org/report#/https://gianlooca.github.io/mementoamiga/)
 <br>
 <br>
+
+### Lighthouse Validation
+Google Lighthouse in Microsoft Edge Developer Tools was used to test performance, accessibility, best practices and SEO (Search Engine Optimization) of the website.
+
+<details><summary>Homepage</summary>
+<img src="docs/validation/memento-amiga-lighthouse.png">
+</details>
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
