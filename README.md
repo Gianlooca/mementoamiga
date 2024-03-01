@@ -48,6 +48,8 @@
     2. [CSS Validation](#CSS-validation)
     3. [Accessibility](#accessibility)
     4. [Lighthouse Validation](#lighthouse-validation)
+    5. [Device testing](#performing-tests-on-various-devices)
+    6. [Browser compatibility](#browser-compatability)
 8. [Deployment](#deployment)
 
 ## Project Goals 
