@@ -77,6 +77,97 @@ const shuffle = (array) => {
   return clonedArray;
 };
 
+const run = () => {
+  // Nasconde il contenitore del tabellone
+  if (!selectors.wrapperBoard.classList.contains("hide")) {
+      selectors.wrapperBoard.classList.add("hide");
+  }
+
+  // ottiene la dimensione del'attributo data-dimension
+  const dimensions = selectors.board.getAttribute("data-dimension");
+
+  // Array con la carta di default
+  const cardDefault = [
+      {
+          name: "amiga",
+          img: "assets/images/amiga-floppy.webp",
+      },
+  ];
+
+  // Array con le carte dei giochi
+  const cardArray = [
+      {
+          name: "lemmings",
+          img: "assets/images/lemmings.webp",
+      },
+      {
+          name: "monkey",
+          img: "assets/images/monkey-island.webp",
+      },
+      {
+          name: "pang",
+          img: "assets/images/pang.webp",
+      },
+      {
+          name: "prehistorik",
+          img: "assets/images/prehistorik.webp",
+      },
+      {
+          name: "rick-dangerous",
+          img: "assets/images/rick-dangerous.webp",
+      },
+      {
+          name: "The-great-giana-sisters",
+          img: "assets/images/The-great-giana-sisters.webp",
+      },
+  ];
+
+  // Sceglie un numero di carte casuali pari alle dimensioni
+  const picks = random(cardArray, dimensions * dimensions);
+
+  // Mescola le carte scelte
+  const items = shuffle([...picks, ...picks]);
+
+  // Genera il markup HTML per le carte
+  const cards = `
+      <div class="board">
+      ${items
+          .map(
+              (item) => `
+                  <div class="card" data-name="${item.name}">
+                      <div class="card-front">
+                          <img src="${cardDefault[0].img}" alt="${cardDefault[0].name}">
+                      </div>
+                      <div class="card-back">
+                          <img src="${item.img}" alt="${item.name}">
+                      </div>
+                  </div>
+              `
+          )
+          .join("")}
+      </div>
+      `;
+
+  // Converte la stringa HTML in nodi DOM
+  var parser = new DOMParser().parseFromString(cards, "text/html");
+
+  // Seleziona il nodo .board appena creato
+  const newBoard = parser.querySelector(".board");
+
+  // Svuota completamente il contenuto di .board
+  selectors.board.innerHTML = "";
+
+  // Sposta tutti i figli di newBoard dentro .board
+  while (newBoard.firstChild) {
+      selectors.board.appendChild(newBoard.firstChild);
+  }
+
+  // Imposta le colonne della griglia
+  selectors.board.style.gridTemplateColumns = `repeat(${dimensions}, auto)`;
+};
+
+
+
 // gestisce game click
 const handleStartGameClick = () => {
   startGame();
