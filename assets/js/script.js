@@ -12,6 +12,7 @@ const selectors = {
   start: document.querySelector("#start"),
   win: document.querySelector(".win"),
   controls: document.querySelector(".controls"),
+  how: document.querySelector(".how"),
 };
 
 /**
@@ -261,9 +262,6 @@ const flipBackCards = () => {
   // Reimposta a 0 il contatore di carte girate
   state.flippedCards = 0;
 };
-
-
-
 
 // Gestisce il click sulle carte
 const handleCardClick = (event) => {
