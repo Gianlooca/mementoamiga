@@ -226,7 +226,7 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 
 **Smartphone Version (With 3 Flipped Cards)**
 
-![[Actual Game Board With 3 Flipped Cards](docs/features/game-board-with-flipped-cards-smartphone.png)
+![Actual Game Board With 3 Flipped Cards](docs/features/game-board-with-flipped-cards-smartphone.png)
 
 ## Validation
 
