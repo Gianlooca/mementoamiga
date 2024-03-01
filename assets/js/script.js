@@ -186,6 +186,21 @@ const handleCardClick = (event) => {
   }
 };
 
+// Gestisce il click sul pulsante start
+const handleStartClick = (event) => {
+  // Ottiene il target dell'evento (l'elemento cliccato)
+  const target = event.target;
+
+  // Ottiene l'elemento padre del target
+  const parent = target.parentElement;
+
+  // Nasconde i controlli
+  selectors.controls.classList.add("hide");
+
+  // Mostra il contenitore del tabellone
+  selectors.wrapperBoard.classList.remove("hide");
+};
+
 // gestisce game click
 const handleStartGameClick = () => {
   startGame();
