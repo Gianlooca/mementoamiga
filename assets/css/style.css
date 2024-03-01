@@ -111,6 +111,7 @@ button:active {
 
 .win-text {
     color: white;
+    text-align: center;
 }
 
 /* Styles for the instructions */
