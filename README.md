@@ -288,6 +288,31 @@ Google Lighthouse in Microsoft Edge Developer Tools was used to test performance
 <details><summary>Homepage</summary>
 <img src="docs/validation/memento-amiga-lighthouse.png">
 </details>
+<br>
+<br>
+
+### Performing tests on various devices 
+The website was tested on the following devices:
+- HP Laptop 15s-eq0xxx;
+- Oppo A52;
+- iPhone 13 Pro;
+- iPhone 14 Pro
+- Realme RMX3630;
+- Realme 11 Pro;
+- Redmi Note 11 Pro;
+
+in addition, the website has been tested using Google Chrome DevTools (and its similar device on Microsoft Edge) for all available default device options.
+<br>
+<br>
+
+### Browser compatibility
+The website was tested on the following browsers:
+- Google Chrome;
+- Mozilla Firefox;
+- Safari;
+- Microsoft Egde.
+<br>
+<br>
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
