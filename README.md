@@ -40,6 +40,8 @@
     2. [Central Board](#central-board)
         1. [Start New Game and How To Play Buttons](#start-new-game-and-how-to-play-buttons)
         2. [Actual Game Board](#actual-game-board)
+        3. [Click Counter and Timer](#click-counter-and-timer)
+        4. [Win Message](#win-message)
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
 8. [Deployment](#deployment)
