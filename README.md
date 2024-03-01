@@ -39,6 +39,7 @@
     1. [Logo](#logo)
     2. [Central Board](#central-board)
         1. [Start New Game and How To Play Buttons](#start-new-game-and-how-to-play-buttons)
+        2. [Actual Game Board](#actual-game-board)
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
 8. [Deployment](#deployment)
@@ -215,6 +216,17 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 **How To Play (Once Clicked)**
 
 ![Start New Game and How To Play Button](docs/features/how-to-play-smartphone.png)
+
+#### Actual Game Board
+- It has a grid of 3 columns and 4 rows of cards. You can click up to two of them per "move"; if they match, they remain flipped, otherwise they will flip back again.
+
+**Tablet Version (With Unflipped Cards)**
+
+![Actual Game Board With Unflipped Cards](docs/features/game-board-tablet.png)
+
+**Smartphone Version (With 3 Flipped Cards)**
+
+![[Actual Game Board With 3 Flipped Cards](docs/features/game-board-with-flipped-cards-smartphone.png)
 
 ## Validation
 
