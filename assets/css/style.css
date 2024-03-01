@@ -226,3 +226,49 @@ footer {
 footer ul li a {
     color: black;
 }
+
+@media screen and (min-width: 768px;) {
+    .main-div {
+        margin: 10px 400px
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+    }
+
+    .stats {
+        margin: 50px 200px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-div {
+        margin: 10px 500px
+    }
+
+    .card {
+        height: 100px;
+        width: 100px;
+    }
+
+    .stats {
+        margin: 50px 300px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 20px;
+    }
+}
