@@ -1,4 +1,4 @@
-const winSound = new Audio("assets/audio/memento-amiga-win");
+const winSound = new Audio("assets/audio/memento-amiga-win.mp3");
 
 /**
  * We created this object in order to access several DOM elements through JS
@@ -174,6 +174,9 @@ const run = () => {
 const startGame = () => {
   // Imposta lo stato del gioco come iniziato
   state.gameStarted = true;
+
+  //Shows the .stats when the game starts
+  selectors.stats.classList.remove("invisible");
 
   // Avvia un loop ogni secondo
   state.loop = setInterval(() => {
