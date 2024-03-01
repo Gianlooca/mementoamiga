@@ -250,6 +250,21 @@ const flipCard = (card) => {
   }
 };
 
+// Gestisce le carte da tornare senza match
+const flipBackCards = () => {
+  // Seleziona tutte le card non abbinate
+  document.querySelectorAll(".card:not(.matched)").forEach((card) => {
+      // Rimuovi la classe flipped per girarle di nuovo coperte
+      card.classList.remove("flipped");
+  });
+
+  // Reimposta a 0 il contatore di carte girate
+  state.flippedCards = 0;
+};
+
+
+
+
 // Gestisce il click sulle carte
 const handleCardClick = (event) => {
   // Ottiene il div.card cliccato
