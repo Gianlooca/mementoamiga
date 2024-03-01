@@ -1,3 +1,5 @@
+const winSound = new Audio("assets/audio/memento-amiga-win");
+
 /**
  * We created this object in order to access several DOM elements through JS
  * (with the querySelector() method in an quicker way
@@ -246,6 +248,9 @@ const flipCard = (card) => {
                   <button id="restart" class="play-again">Play Again</button>
               </div>
           `;
+
+          //Starts the winSound
+          winSound.play();
 
           // Ferma il timer
           clearInterval(state.loop);
