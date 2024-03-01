@@ -166,7 +166,25 @@ const run = () => {
   selectors.board.style.gridTemplateColumns = `repeat(${dimensions}, auto)`;
 };
 
+// Gestisce il click sulle carte
+const handleCardClick = (event) => {
+  // Ottiene il div.card cliccato
+  const target = event.target.nextSibling.parentElement;
 
+  // Ottiene il div.card-container padre
+  const parent = target.parentElement;
+
+  // Logica per flippare la carta
+  if (
+      // Controlla che sia un div.card
+      target.className.includes("card") &&
+      // e che il contenitore non sia già flippato
+      !parent.className.includes("flipped")
+  ) {
+      // Flippa la carta
+      flipCard(parent);
+  }
+};
 
 // gestisce game click
 const handleStartGameClick = () => {
