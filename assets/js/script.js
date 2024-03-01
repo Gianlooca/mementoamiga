@@ -12,6 +12,7 @@ const selectors = {
   start: document.querySelector("#start"),
   win: document.querySelector(".win"),
   controls: document.querySelector(".controls"),
+  stats: document.querySelector(".stats"),
   how: document.querySelector(".how"),
 };
 

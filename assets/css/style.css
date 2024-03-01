@@ -20,14 +20,18 @@
     font-family: 'AmigaTopaz', sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    height: 100vh;
+    height: 100%;
     display: flex;
     background-color: #0052b0;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     flex-direction: column;
 }
 
@@ -43,7 +47,7 @@ body {
 
 h1 {
     margin-top: 4px;
-    font-size: 13vw;
+    /*font-size: 13vw;*/
     color: white;
     text-shadow: 2px 3px black;
     text-decoration-line: underline;
@@ -52,12 +56,8 @@ h1 {
 /* ---------- Main Div, the frame which will contain the game */
 
 .main-div {
-    display: flex;
-    margin: auto;
-    width: 90%;
     border: 2px solid white;
     box-shadow: 6px 6px black;
-    min-height: 300px;
     margin: 10px 40px;
 }
 
@@ -126,11 +126,18 @@ button:active {
 /* Styles for the click counter and the timer */
 .stats {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     flex: 1 0 auto;
-    margin: 5px 40px;
+    margin: 10px 40px;
     color: #f0f0f0;
+}
+
+.card {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
 }
 
 /*The transform-style property "inserts" our memory card element inside the 3d space which is created in the 
@@ -233,7 +240,7 @@ footer ul li a {
     }
 
     .main-div {
-        margin: 10px 400px
+        margin: 10px 216px;
     }
 
     button {
@@ -241,8 +248,8 @@ footer ul li a {
     }
 
     .card {
-        height: 100px;
-        width: 100px;
+        height: 130px;
+    width: 130px;
     }
 
     .stats {
@@ -271,7 +278,7 @@ footer ul li a {
     }
 
     .main-div {
-        margin: 10px 500px
+        margin: 10px 335px;
     }
 
     button {
