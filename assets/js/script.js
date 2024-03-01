@@ -70,3 +70,8 @@ const handleShowHowClick = () => {
   selectors.how.classList.remove("hide");
 };
 
+// gestione back click
+const handleBackClick = () => {
+  selectors.controls.classList.remove("hide");
+  selectors.how.classList.add("hide");
+};
