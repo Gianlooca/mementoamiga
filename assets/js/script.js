@@ -228,7 +228,9 @@ const flipCard = (card) => {
       // After one second, turns back the cards again
       setTimeout(() => {
           flipBackCards();
+          stopFlip = true;
       }, 1000);
+      stopFlip = false;
   }
 
   // If there aren't card to flip anymore, you won
@@ -273,6 +275,8 @@ const flipBackCards = () => {
   state.flippedCards = 0;
 };
 
+let stopFlip = true;
+
 // Handles the click on cards
 const handleCardClick = (event) => {
   // Gets the div.card clicked
@@ -285,7 +289,8 @@ const handleCardClick = (event) => {
   if (
       // Check that it is a div.card AND AT THE SAME TIME that the container is not already flipped
       target.className.includes("card") &&
-      !parent.className.includes("flipped")
+      !parent.className.includes("flipped") &&
+      stopFlip
   ) {
       // Flip the card
       flipCard(parent);
