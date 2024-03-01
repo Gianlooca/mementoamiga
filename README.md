@@ -187,7 +187,7 @@ Since interactivity (hence the use of JavaScript) is involved, I also have creat
 <br>
 
 ## Features
-As already said, the page is "skinny": it consists of a single page and 7 features.
+As already said, the page is "skinny": it consists of a single page and 7 features. Since, once again, the website mantains - while being responsive - pretty much the same structure on every kind of screen, we'll show just a few examples taken from different screen sizes of the mentioned features.
 
 ### Logo
 - It shows the page title in the peculiar Amiga 500 font (recreated by Patrick H. Lauke). It's responsive but always the same, basically, in all the versions, so we're going to show just a sample from the smartphone version
@@ -198,6 +198,22 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 
 <br>
 <br>
+
+### Central Board
+- Everything that will happen on the website will appear inside this board, whose size will change accordingly to its content (and, again, to the screen size). It will "host", in fact:
+
+#### Start New Game and How To Play Buttons
+- The first one will evidently let the user start a new game; the second one will show the instructions.
+
+**Smartphone (General and Detailed View) Version**
+
+![Central Board](docs/features/memento-amiga-general-smartphone.png)
+
+![Start New Game and How To Play Button](docs/features/central-board-controls.png)
+
+**How To Play (Once Clicked)**
+
+![Start New Game and How To Play Button](docs/features/how-to-play-smartphone.png)
 
 ## Validation
 
