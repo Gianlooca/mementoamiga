@@ -59,6 +59,24 @@ const random = (array, items) => {
   return randomValue;
 };
 
+// Funzione per mescolare gli elementi di un array
+const shuffle = (array) => {
+  // Clona l'array originale per non modificarlo
+  var clonedArray = [...array];
+
+  // Cicla all'indietro sulla lunghezza dell'array
+  for (let i = clonedArray.length - 1; i > 0; i--) {
+      // Sceglie un indice casuale tra 0 e i
+      const j = Math.floor(Math.random() * (i + 1));
+
+      // Scambia gli elementi in posizione i e j
+      [clonedArray[i], clonedArray[j]] = [clonedArray[j], clonedArray[i]];
+  }
+
+  // Restituisce l'array mescolato
+  return clonedArray;
+};
+
 // gestisce game click
 const handleStartGameClick = () => {
   startGame();
