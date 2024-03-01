@@ -42,6 +42,7 @@
         2. [Actual Game Board](#actual-game-board)
         3. [Click Counter and Timer](#click-counter-and-timer)
         4. [Win Message](#win-message)
+    3. [Footer](#footer)
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
 8. [Deployment](#deployment)
@@ -239,6 +240,17 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 **Tablet Version**
 
 ![Win Message](docs/features/win-message-with-stats-tablet.png)
+
+<br>
+<br>
+
+### Footer
+- it's sticky to the bottom of the page;
+- it has a thin black top border to visually separate it from the main content;
+- it contains the copyright information and the links to the Facebook, Instagram, YouTube and Tweeter pages of Memento Amiga, in order to give to the player the possibility of knowing more about the game developer.
+
+**Tablet Version**
+![Footer](docs/features/footer-tablet.png)
 
 ## Validation
 
