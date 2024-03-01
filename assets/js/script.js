@@ -59,3 +59,14 @@ const random = (array, items) => {
   return randomValue;
 };
 
+// gestisce game click
+const handleStartGameClick = () => {
+  startGame();
+};
+
+// gestisce come funziona il gioco
+const handleShowHowClick = () => {
+  selectors.controls.classList.add("hide");
+  selectors.how.classList.remove("hide");
+};
+
