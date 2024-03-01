@@ -166,6 +166,24 @@ const run = () => {
   selectors.board.style.gridTemplateColumns = `repeat(${dimensions}, auto)`;
 };
 
+// Fa partire il timer
+const startGame = () => {
+  // Imposta lo stato del gioco come iniziato
+  state.gameStarted = true;
+
+  // Avvia un loop ogni secondo
+  state.loop = setInterval(() => {
+      // Incrementa il tempo totale
+      state.totalTime++;
+
+      // Aggiorna il testo del contatore di mosse
+      selectors.moves.innerText = `${state.totalFlips} Moves`;
+
+      // Aggiorna il testo del timer
+      selectors.timer.innerText = `Time: ${state.totalTime} Sec`;
+  }, 1000);
+};
+
 // Gestisce il click sulle carte
 const handleCardClick = (event) => {
   // Ottiene il div.card cliccato
