@@ -59,6 +59,8 @@
 9. [Credits](#credits)
     1. [General References](#general-references)
     2. [Media](#media)
+    3. [Code](#code)
+10. [Acknowledgements](#acknowledgements)
 
 ## Project Goals 
 
@@ -511,4 +513,20 @@ Images, audio files and fonts have been used by the developer for educational pu
 **Icons**
 - The social media icons in the Footer have been found on [Font Awesome](https://fontawesome.com/).
 <br>
+
+### Code
+
+- The biggest source of inspiration for this work comes from [this repo](https://github.com/flowforfrank/memory-game);
+- a big help about the JavaScript part came also from a memory game [(here we have the link for its repo)](https://github.com/lee-joanne/memory-game) realized by the Code Institute tutor [Joanne](https://github.com/lee-joanne) to who goes my deepest thanks for having shared spontaneously with me her work;
+- another help came from [this similar memory game](https://suzannenl.github.io/clouds-memory-game/) realized by the former student of the Code Institute [SuzanneNL](https://github.com/SuzanneNL);
+- I have read with interest [this article](https://bobbyhadz.com/blog/javascript-hide-button-after-click) about how to make a button disapper after a click, because I needed it in my project;
+- in order to create a flip card effect, I have read several articles such as [this one](https://jefferson-cuartas.medium.com/how-to-create-a-flip-card-effect-using-javascript-767dd945210c#:~:text=Firstly%2C%20in%20your%20JS%20index,which%20toggles%20on%20a%20click.) or watched tutorials (like [this interesting and beginner-friendly series](https://youtube.com/playlist?list=PLLX1I3KXZ-YH-woTgiCfONMya39-Ty8qw&si=nVuK6eb2MLpnF_RX)), but eventually I preferred to stick to the first source I mentioned in this section;
+- [this other article](https://dev.to/colelevy/queryselector-vs-getelementbyid-166n#:~:text=getElementById()%20only%20works%20with,before%20returning%20the%20first%20match.) has been instructive for me, in order to understand the difference between these two JavaScript functions;
+- when I had to create a shuffle function for the cards, I also tried to get into [the famous Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)... without getting too much of it, but I think in some way it has been helpful;
+- I needed to add a sound when a certain condition was "on"; [this other article](https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.) about audio files in JavaScript helped me.
+<br>
+<br>
+<br>
+
+## Acknowledgements
 
