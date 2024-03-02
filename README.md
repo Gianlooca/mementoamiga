@@ -100,6 +100,7 @@
 3. As a user, I want to know in how many clicks/taps I won.
 4. As a user, I want to see how much time it took to win.
 5. As a user, I want to be able to play again easily.
+6. As a user, I want to be able to contact the game developer.
 
 #### Site Owner 
 1. As the site owner, I want users to understand swiftly what the game is about.
@@ -396,6 +397,17 @@ The website was tested on the following browsers:
 <details><summary>Screenshots</summary>
 <img src="docs/user-stories-testing/memento-amiga-test-five.png">
 </details>
+
+6. As a user, I want to be able to contact the game developer.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Footer - Social Media Links | Check the Footer | Find the Social Media Icon Links | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/features/footer-tablet.png">
+</details>
+<br>
 <br>
 <br>
 
