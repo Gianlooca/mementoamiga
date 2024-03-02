@@ -437,7 +437,7 @@ The website was tested on the following browsers:
 | I noticed that it was possible to click on a third card even after flipping the first two cards; this third card didn't flip, but the click was still counted in the statistics as a move (even if technically wasn't a move but just a click) | I created a variable (which I called stopFlip) and assigned to it a boolean value of true, but then I assigned to it a value of false after the second unmatched card of any session was flipped; until the two cards are flipped back again, no clicks are possible (and so no moves are recorded). In fact, now you always have an even number of moves in a game |
 | Even if correctly uploaded in a "font" folder inside the "css" folder, the font I chose - since it is not taken from Google Fonts - wasn't working; to be precise, it wasn't displayed on devices other than my laptop (where the font is stored) | I had to follow [this tutorial on Scalable CSS](https://scalablecss.com/setup-custom-fonts-with-font-face/) - as already mentioned - and since then the font works fine everywhere. But... *I already talked about this previously and I will mention the problem again as shown below.* |
 
-### Fixed bugs
+### Unfixed bugs
 
 - Once again, even if the website works fine and the chosen font is displayed on every device I tried on (and on friends' devices), if I try to validate on the [W3C CSS Validation Service - Jigsaw](https://jigsaw.w3.org/css-validator/) by pushing the url of the website, it shows an error; and, once again, the same error isn't displayed if I validate through direct immission of the whole CSS code;
 - on mobile devices, I didn't manage to stop the "win sound" that starts once the player win a game even if I exit the browser.
