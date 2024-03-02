@@ -421,6 +421,18 @@ The website was tested on the following browsers:
 <br>
 <br>
 
+## Bugs
+
+*Once again, numbering the amount of bugs I had to deal with - as a beginner - is impossible; this README file would double its size. I'll just mention a few of them.*
+
+### Fixed bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| After winning a game, the Central Board (the .main-div basically) looked "sticky" to the bottom of the page, showing the footer on it | I had to create a class with the visibility property set to "hidden" (and add it dinamically with JavaScript in case of victory, on line 242) in order to maintain the .stats below the Central Board - which, as we know, is different than using the display property with a value of "none" - so the Central Board maintained its position in the page (because also of the flex property used in the .title, in the .controls and in the .stats classes) |
+| I noticed that it was possible to click on a third card even after flipping the first two cards; this third card didn't flip, but the click was still counted in the statistics as a move (even if technically wasn't a move but just a click) | I created a variable (which I called stopFlip) and assigned to it a boolean value of true, but then I assigned to it a value of false after the second unmatched card of any session was flipped; until the two cards are flipped back again, no clicks are possible (and so no moves are recorded). In fact, now you always have an even number of moves in a game |
+| Even if correctly uploaded in a "font" folder inside the "css" folder, the font I chose - since it is not taken from Google Fonts - wasn't working; to be precise, it wasn't displayed on devices other than my laptop (where the font is stored) | I had to follow [this tutorial on Scalable CSS](https://scalablecss.com/setup-custom-fonts-with-font-face/) - as already mentioned - and since then the font works fine everywhere. But... *I already talked about this previously and I will mention the problem again as shown below.* | 
+
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. I went to the Settings tab of my GitHub repository (created before);
