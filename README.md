@@ -57,6 +57,8 @@
     2. [Unfixed Bugs](#unfixed-bugs)
 8. [Deployment](#deployment)
 9. [Credits](#credits)
+    1. [General References](#general-references)
+    2. [Media](#media)
 
 ## Project Goals 
 
