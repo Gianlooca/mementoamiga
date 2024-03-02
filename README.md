@@ -496,3 +496,17 @@ Images, audio files and fonts have been used by the developer for educational pu
 - the [Prehistorik game cover](assets/images/prehistorik.webp) has been taken from [this website](https://amiga.abime.net/games/view/prehistorik#scans);
 - the [Rick Dangerous game cover](assets/images/rick-dangerous.webp) has been taken from [this website](https://www.retroplace.com/it/giochi/30556--rick-dangerous);
 - [The Great Giana Sisters game cover](assets/images/The-great-giana-sisters.webp) has been taken from [this website](https://frgcb.blogspot.com/2013/09/the-great-giana-sisters-rainbow-arts.html);
+
+**Audio**
+- The only audio file has been taken from [this unofficial archive](https://rickdangerous.co.uk/sounds.htm) where other sounds from the Rick Dangerous saga can be found.
+
+**Favicon**
+- The favicon in use has been created with [Favicon](https://favicon.io/).
+
+**Fonts**
+- As mentioned above, the "Amiga Topaz" font has been re-created by Patrick H. Lauke and can be found [here](https://fontstruct.com/fontstructions/show/675155).
+
+**Icons**
+- The social media icons in the Footer have been found on [Font Awesome](https://fontawesome.com/).
+<br>
+
