@@ -484,3 +484,15 @@ You can clone the repository by following these steps:
 - as a guide to write a complete and detailed README.md, I stick always to the work of [Ana Runje](https://github.com/4n4ru) in her [Bodelschwinger Hof Project](https://github.com/4n4ru/CI_MS1_BodelschwingherHof).
 <br>
 
+### Media
+
+Images, audio files and fonts have been used by the developer for educational purposes only, and are the copyrighted property of third parties (in many cases, of no longer existing companies).
+
+**Images**
+- The famous [Amiga Floppy Disk](assets/images/amiga-floppy.webp) icon has been taken from [this website](https://www.key4biz.it/amiga-emulatore-browser/144623/) (which I don't think owns any right on it);
+- the [Lemmings game cover](assets/images/lemmings.webp) has been taken from [this website](https://www.mobygames.com/game/683/lemmings/cover/group-127872/cover-351468/);
+- the [Monkey Island game cover](assets/images/monkey-island.webp) has been taken from [Amazon](https://www.amazon.de/-/en/dp/B00TYNB3F0);
+- the [Pang game cover](assets/images/pang.webp) has been taken from [this website](https://www.retroplace.com/it/giochi/30067--pang);
+- the [Prehistorik game cover](assets/images/prehistorik.webp) has been taken from [this website](https://amiga.abime.net/games/view/prehistorik#scans);
+- the [Rick Dangerous game cover](assets/images/rick-dangerous.webp) has been taken from [this website](https://www.retroplace.com/it/giochi/30556--rick-dangerous);
+- [The Great Giana Sisters game cover](assets/images/The-great-giana-sisters.webp) has been taken from [this website](https://frgcb.blogspot.com/2013/09/the-great-giana-sisters-rainbow-arts.html);
