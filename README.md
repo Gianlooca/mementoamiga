@@ -198,6 +198,10 @@ Since interactivity (hence the use of JavaScript) is involved, I also have creat
 - [Favicon](https://favicon.io/)
 - [Snipping Tool](https://apps.microsoft.com/detail/9MZ95KL8MR0L?hl=en-US&gl=US)
 - [Google](https://www.google.com/)
+- [Transfonter](https://transfonter.org/)
+- [W3C CSS Validation Service - Jigsaw](https://jigsaw.w3.org/css-validator/)
+- [W3C Markup Validation Service](https://validator.w3.org/)
+- [JSHint](https://jshint.com/)
 <br>
 <br>
 <br>
