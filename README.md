@@ -46,10 +46,12 @@
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Lighthouse Validation](#lighthouse-validation)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
+    3. [JavaScript Validation](#javascript-validation)
+    4. [Accessibility](#accessibility)
+    5. [Lighthouse Validation](#lighthouse-validation)
+    6. [Device testing](#performing-tests-on-various-devices)
+    7. [Browser compatibility](#browser-compatability)
+    8. [Testing user stories](#testing-user-stories)
 8. [Deployment](#deployment)
 
 ## Project Goals 
@@ -271,11 +273,17 @@ The [W3C Markup Validation Service](https://validator.w3.org/) was used to valid
 
 ### CSS Validation
 The [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS of the website.
-The page has been validated (both by URI and text input) with one error that can be seen [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgianlooca.github.io%2Fmementoamiga%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=it#errors). It's a font-related error: previously, at the beginning of the development of Memento Amiga, I had to read [this article](https://scalablecss.com/setup-custom-fonts-with-font-face/) on Scalable CSS website in order to make the font - I do not own - work on my website. After following that tutorial, everything worked just fine: even from other devices (smartphones and laptops) the right font was displayed. Anyway, I contacted the tutor service in order to understand how to fix the error (since I know that one error here means a fail) and the tutor called Roo told me that, since we cannot access the font code (written in binary) there's probably no way to fix the error, and linked me [this article on Stack Overflow](https://stackoverflow.com/questions/6501115/lexical-error-encountered-0-after) about the same error. Anyway, he suggested me (as I will show with screenshots of the conversation) to just describe this unfixable bug here in the README.md file and, I quote him, "it will be fine". By the way, once again, the website is running, the font is displayed perfectly and the error given is lexical. 
+The page has been validated by text input returning no errors but, if validated by url, with one error that can be seen [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgianlooca.github.io%2Fmementoamiga%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=it#errors). It's a font-related error: previously, at the beginning of the development of Memento Amiga, I had to read [this article](https://scalablecss.com/setup-custom-fonts-with-font-face/) on Scalable CSS website in order to make the font - I do not own - work on my website. After following that tutorial, everything worked just fine: even from other devices (smartphones and laptops) the right font was displayed. Anyway, I contacted the tutor service in order to understand how to fix the error (since I know that one error here means a fail) and the tutor called Roo told me that, since we cannot access the font code (written in binary) there's probably no way to fix the error, and linked me [this article on Stack Overflow](https://stackoverflow.com/questions/6501115/lexical-error-encountered-0-after) about the same error. Anyway, he suggested me (as I will show with screenshots of the conversation) to just describe this unfixable bug here in the README.md file and, I quote him, "it will be fine". By the way, once again, the website is running, the font is displayed perfectly and the error given is lexical. I also talked with another tutor (Roman) about this, and he confirmed what Roo said. 
 
-![Conversation with Roo about the css error 1](docs/conversation-with-tutor-Roo-about-css-error.png)
-![Conversation with Roo about the css error 2](docs/conversation-with-tutor-Roo-about-css-error-2.png)
+![Conversation with Roo about the css error 1](docs/validation/conversation-with-tutor-Roo-about-css-error.png)
+![Conversation with Roo about the css error 2](docs/validation/conversation-with-tutor-Roo-about-css-error-2.png)
 <br>
+
+### JavaScript Validation
+I used the [JSHint validator](https://jshint.com/) to test my JavaScript code. No errors or warnings have been displayed, as it can be seen on the attached image below.
+<details><summary>JavaScript Validation</summary>
+<img src="docs/validation/javascript-validation-memento-amiga.jpeg">
+</details>
 
 ### Accessibility
 The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. 0 errors and 0 alerts have been displayed.
@@ -315,6 +323,8 @@ The website was tested on the following browsers:
 - Microsoft Egde.
 <br>
 <br>
+
+### Testing User Stories
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
