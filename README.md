@@ -531,3 +531,14 @@ Images, audio files and fonts have been used by the developer for educational pu
 
 ## Acknowledgements
 
+I would like to thank:
+- my JavaScript expert friend Pietro: without him, I could have never create this game;
+- my mentor [Juliia Konn](https://www.linkedin.com/in/iuliia-konovalova-27948020b/) for her moral and practical support and, last but not least, her kindness;
+- Code Institute Slack Community for providing practical help, support, small talk and peer reviews, in particular:
+    1. [Dennis Schenkel](https://www.linkedin.com/in/dennisschenkel/), for the time spent explaining me JavaScript particulars and even checking on my progress;
+    2. Krista Boka;
+    3. Ellenor Vondrus;
+    4. Ayisha Sandiford;
+    5. Gudrun;
+    6. [Stef](https://www.linkedin.com/in/stefania-frustagli-19828b156/);
+- the tutors of Code Institute - once again, especially to [Rebecca](https://github.com/rebeccatraceyt) for her kindness and her efficient way to solve issues and explaining me obscure things; but special thanks also to Joanne and Roman.
