@@ -326,6 +326,30 @@ The website was tested on the following browsers:
 
 ### Testing User Stories
 
+**Users**
+
+1. As a user, I want to know quickly what the website is about.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Central Board | Land on the Homepage, see the Central Board and read the two buttons, which makes the user understand it is surely something about a game | Understanding that the website it's about a game (an Amiga-themed memory card game in detail) | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-stories-testing/memento-amiga-test-one.png">
+</details>
+<br>
+
+2. As a user, I want to easily understand how to play.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Central Board | Land on the Homepage, see the Central Board, click on the "how to play" button: a brief caption with instructions will show up | Understanding how to play this specific game | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-stories-testing/memento-amiga-test-two.png">
+</details>
+<br>
+
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. I went to the Settings tab of my GitHub repository (created before);
