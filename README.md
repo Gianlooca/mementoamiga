@@ -350,6 +350,39 @@ The website was tested on the following browsers:
 </details>
 <br>
 
+3. As a user, As a user, I want to know in how many clicks/taps I won.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Central Board (after a game) | Play and win a game, see the message shown at the end of it | Finding out in how many moves the game has been accomplished | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-stories-testing/memento-amiga-test-three.png">
+</details>
+<br>
+
+4. As a user, I want to see how much time it took to win.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Central Board (after a game) | Play and win a game, see the message shown at the end of it | Finding out how much time it took to win a game | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-stories-testing/memento-amiga-test-four.png">
+</details>
+<br>
+
+5. As a user, I want to be able to play again easily.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Central Board (after a game) | Win a game, see the message shown and click on the "Play again" button: then you'll be sent back to the Homepage where you can click again on the "Start new game" button | Starting a new game in two clicks | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-stories-testing/memento-amiga-test-five.png">
+</details>
+<br>
+
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
 1. I went to the Settings tab of my GitHub repository (created before);
