@@ -272,7 +272,7 @@ As already said, the page is "skinny": it consists of a single page and 7 featur
 **Tablet Version**
 ![Footer](docs/features/footer-tablet.png)
 
-*Errata corrige: in the "How to play" message picture shown here in the picture of the README.md file there's a typo: there's a reference to "4 couples" of identical cards, but - since we have 12 cards - we evidently have 6 couples of cards. In the live website the typo has been fixed.*
+*Errata corrige: in the "How to play" message picture shown here in the README.md file there's a typo: there's a reference to "4 couples" of identical cards, but - since we have 12 cards - we evidently have 6 couples of cards. In the live website the typo has been fixed.*
 
 <br>
 <br>
