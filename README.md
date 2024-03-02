@@ -475,3 +475,12 @@ You can clone the repository by following these steps:
 <br>
 <br>
 <br>
+
+## Credits
+
+### General References
+
+- As usual, suffice to say that [W3C website](https://www.w3.org/), [W3Schools](https://www.w3schools.com/) and [MDN Web Docs](https://developer.mozilla.org/en-US/) have been fundamental in order to get a clear (or, at least, clearer than before) sense of how to conceive and use JavaScript. I had a fundamental help also from the two following sources: the book called [A Smarter Way To Learn JavaScript](https://wccftech.com/wp-content/uploads/2014/10/JavaScript.pdf) by Mark Myers and [this other archive](https://code.mu/en/javascript/book/prime/) by Dmitry Trepachev;
+- as a guide to write a complete and detailed README.md, I stick always to the work of [Ana Runje](https://github.com/4n4ru) in her [Bodelschwinger Hof Project](https://github.com/4n4ru/CI_MS1_BodelschwingherHof).
+<br>
+
