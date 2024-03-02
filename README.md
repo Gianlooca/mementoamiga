@@ -382,6 +382,44 @@ The website was tested on the following browsers:
 <img src="docs/user-stories-testing/memento-amiga-test-five.png">
 </details>
 <br>
+<br>
+
+**Site Owner**
+
+1. As the site owner, I want users to understand swiftly what the game is about.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Central Board | Land on the Homepage, see the Central Board, click on the "how to play" button: a brief caption with instructions will show up | Understanding how to play this specific game | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user-stories-testing/memento-amiga-test-two.png">
+</details>
+<br>
+
+2. As the site owner, I want the users to enjoy a general retro look.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Whole website | Land on the Homepage, see the name of the website, the general design, the fonts used, the back and the frontface of the cards | Understanding the atmosphere of the game | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/features/memento-amiga-general-smartphone.png">
+<img src="docs/features/game-board-with-flipped-cards-smartphone.png">
+<img src="docs/features/how-to-play-smartphone.png">
+</details>
+<br>
+
+3. As the site owner, I want to give the user an "extra feeling" with retro videogame sounds when the player wins.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Whole website | Win a game: a typical "chip tune" (taken from the start of the third level of the Amiga 500 videogame called "Rick Dangerous") will strike up | Understanding the atmosphere of the game | Works as expected |
+
+*Obviously it's impossible to show a sound. By the way, you can find the audio file [here](https://rickdangerous.co.uk/sounds/egypt-am.mp3).*
+<br>
+<br>
+<br>
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
